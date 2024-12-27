@@ -178,7 +178,7 @@ main .nota-section{
     background-image: url("../img/colapinto-2025.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:top;
+    background-position: top;
     background-attachment: fixed;
     color: white;
     text-align: center;
@@ -650,7 +650,8 @@ footer ul li a img:hover{
     background-image: url("../img/colapinto-2025-696px.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position:center;
+    background-attachment: fixed;
     }
 }
 
