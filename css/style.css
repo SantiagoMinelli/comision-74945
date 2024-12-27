@@ -644,6 +644,15 @@ footer ul li a img:hover{
         height: 90%;
         padding-left: 25px;
     }
+
+    /*-- NOTA SECTION --*/
+    .nota-section{
+    background-image: url("../img/colapinto-2025-696px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    }
 }
 
 /*-- 696PX --*/
@@ -658,13 +667,5 @@ footer ul li a img:hover{
     .driver-section div div img{
         width: 120px;
         height: 180px;
-    }
-
-    .nota-section{
-    background-image: url("../img/colapinto-2025-696px.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
     }
 }
