@@ -646,7 +646,7 @@ footer ul li a img:hover{
     }
 
     /*-- NOTA SECTION --*/
-    .nota-section{
+    main .nota-section{
     background-image: url("../img/colapinto-2025-696px.jpg");
     background-repeat: no-repeat;
     background-size: cover;
