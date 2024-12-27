@@ -1,0 +1,662 @@
+/*--------------- RESET CSS ---------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*--------------- FONT IMPORT ---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+/*--------------- INDEX ---------------*/
+p{
+    font-family: "Blinker", sans-serif;
+}
+/* -- NAVBAR -- */
+header{
+    font-family: "Orbitron", serif;
+    font-size: 15px;
+    background-color: #ff0600;
+}
+
+header nav div .navbar-collapse{
+    padding: 10px;
+}
+
+header nav div div .navbar-nav{
+    width: 45%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header nav div div ul li .nav-link{
+    color: white;
+}
+
+header nav .logo-index{
+    width: 120px;
+    height: 40px;
+}
+
+/* -- SOMBREADO LINKS -- */
+header nav div div ul li .nav-link:hover{
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+}
+
+header nav .logo-index:hover{
+    border-color: white;
+    border-bottom: solid 1px black;
+}
+
+/* -- SOMBREADO TOGGLER -- */
+header nav div .navbar-toggler{
+    color: white;
+    border: solid white 2px;
+}
+
+/* -- HERO-SECTION -- */
+main .hero-section{
+    width: 100%;
+    height: 550px;
+    background-image: url("../img/verstappen-campeon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main .hero-section h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Orbitron", serif;
+    padding-top: 25%;
+}
+
+main .hero-section p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* -- NOTICIAS -- */
+main .noticias{
+    padding: 10px;
+}
+/*-- GRID NOTICIAS --*/
+main section .grid-noticia{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 360px 360px 360px;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+/*-- GRID POSICIONES --*/
+main section div .grid-noticia-central{
+    grid-row: span 3;
+    border-top: solid red 10px;
+    border-right: solid red 10px;
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+}
+
+main section div .grid-noticia-item {
+    align-items: center;
+    justify-content: center;
+}
+
+/*-- GRID TEXTOS --*/
+main section .grid-noticia p{
+    color: #ff0600;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 5px;
+    text-align: center;
+}
+
+main section .grid-noticia h2{
+    font-size: 35px;
+    font-family: "Orbitron", serif;
+}
+
+main section .grid-noticia h3{
+    font-size: 18px;
+    font-family: "Orbitron", serif;
+    text-align: justify;
+}
+
+/*-- GRID BORDES --*/
+main section div .grid-noticia-item:not(img,p){
+    border-bottom: solid red 1px;
+    border-right: solid red 1px;
+    border-radius: 0 0 10px 0;
+}
+
+/*-- GRID IMAGENES --*/
+main section div .grid-noticia-central img{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+main section div .grid-noticia-item img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-- GRID ANIMACION --*/
+main section div .grid-noticia-central:hover{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+main section div .grid-noticia-item:hover{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* -- NOTA-SECTION -- */
+main .nota-section{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/colapinto-2025.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+main .nota-section h2{
+    font-size: 40px;
+    font-family: "Orbitron", serif;
+    padding-top: 15px;
+}
+
+main .nota-section p{
+    font-size: 15px;
+}
+
+/*--------------- CRONOGRAMA ---------------*/
+/* -- HERO-CRONOGRAMA -- */
+.hero-cronograma{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/cronograma-section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-cronograma h1{
+    color: white;
+    font-size: 38px;
+    text-align:center;
+    justify-content: center;
+    font-family: "Orbitron", serif;
+}
+
+.hero-cronograma p{
+    color: white;
+    font-size: 12px;
+    font-weight: 12px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* -- NOTICIA-CRONOGRAMA -- */
+.noticia-cronograma p{
+    padding: 5px 0px 0px 8px;
+}
+
+/* -- CRONOGRAMA -- */
+.cronograma p{
+    font-family: "Blinker", sans-serif;
+}
+
+.cronograma h2{
+    font-family: "Orbitron", serif;
+    font-size: 28px;
+}
+
+/* -- TABLA CRONOGRAMA -- */
+.cronograma{
+    padding: 0px 0px 10px 30px;
+}
+
+.cronograma table thead{
+    color: white;
+    background-color: black;
+    font-family: "Orbitron", serif;
+}
+
+.cronograma table{
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    text-align: left;
+    align-content: center;
+    align-items: center;
+}
+
+.cronograma table tbody{
+    color: gray;
+    font-family: "Blinker", sans-serif;
+}
+
+.cronograma table th, td{
+    padding: 8px;
+}
+.cronograma table tbody tr:nth-child(odd){
+    background-color: rgb(224, 224, 224);
+}
+
+.noticia-cronograma{
+    padding-left: 10px;
+}
+
+/*--------------- DRIVERS ---------------*/
+.driver-section{
+    text-align: center;
+}
+.driver-section h1{
+    font-size: 50px;
+    font-family: "Orbitron", serif;
+    text-align: left;
+    padding: 20px;
+    border-right: solid black;
+    border-top: solid black;
+    border-radius: 10px;
+}
+
+.driver-section p{
+    font-family: "Blinker", sans-serif;
+    padding: 15px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+/* -- TABLA DRIVERS -- */
+.driver-section .top-3, div{
+    display: inline-table;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+.driver-section .top-3 div img{
+    width: 330px;
+    height: 380px;
+}
+
+.driver-section div div img{
+    width: 285px;
+    height: 320px;
+}
+
+
+/*--------------- EQUIPOS ---------------*/
+.equipo-section{
+    text-align: center;
+}
+
+.equipo-section h1{
+    font-size: 50px;
+    font-family: "Orbitron", serif;
+    text-align: left;
+    padding: 20px;
+    border-right: solid black;
+    border-top: solid black;
+    border-radius: 10px;
+}
+
+.equipo-section p{
+    font-family: "Blinker", sans-serif;
+    padding: 15px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+/* -- TABLA EQUIPOS -- */
+.equipo-section div div img{
+    width: 560px;
+    height: 330px;
+    display:inline-table;
+    justify-content:space-around;
+}
+
+
+/*--------------- CAMPEONATOS ---------------*/
+/* -- DRIVERS -- */
+.campeonato-drivers {
+    text-align: center;
+}
+
+.campeonato-drivers h2{
+    font-size: 40px;
+    font-family: "Orbitron", serif;
+    text-align: left;
+    padding: 20px;
+    border-right: solid black;
+    border-top: solid black;
+    border-radius: 10px;
+}
+
+.campeonato-drivers p{
+    padding: 5px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+.campeonato-drivers div img{
+    width: 80%;
+}
+
+/* -- TABLA DRIVERS -- */
+.campeonato-drivers div table{
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    text-align: left;
+    margin: auto;
+}
+
+.campeonato-drivers div table thead{
+    color: white;
+    background-color: black;
+    font-family: "Orbitron", serif;
+}
+
+.campeonato-drivers div table tbody{
+    color: gray;
+    font-family: "Blinker", sans-serif;
+}
+
+.campeonato-drivers div table th, td{
+    padding: 8px;
+}
+.campeonato-drivers div table tbody tr:nth-child(odd){
+    background-color: rgb(224, 224, 224);
+}
+
+/* -- CONSTRUCTORES -- */
+.campeonato-constructores {
+    text-align: center;
+}
+
+.campeonato-constructores h2{
+    font-size: 40px;
+    font-family: "Orbitron", serif;
+    text-align: left;
+    padding: 20px;
+    border-right: solid black;
+    border-top: solid black;
+    border-radius: 10px;
+}
+
+.campeonato-constructores p{
+    padding: 5px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+.campeonato-constructores div img{
+    width: 80%;
+}
+
+/* -- TABLA CONSTRUCTORES -- */
+.campeonato-constructores div table{
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    text-align: left;
+    margin: auto;
+}
+
+.campeonato-constructores div table thead{
+    color: white;
+    background-color: black;
+    font-family: "Orbitron", serif;
+}
+
+.campeonato-constructores div table tbody{
+    color: gray;
+    font-family: "Blinker", sans-serif;
+}
+
+.campeonato-constructores div table th, td{
+    padding: 8px;
+}
+.campeonato-constructores div table tbody tr:nth-child(odd){
+    background-color: rgb(224, 224, 224);
+}
+/*--------------- FOOTER ---------------*/
+footer{
+    background-color: rgb(202, 201, 201);
+    list-style: none;
+    padding-right: 30px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li a img{
+    width: 45px;
+    padding: 5px;
+}
+
+/*-- FOOTER ANIMACION --*/
+footer ul li a img:hover{
+    width: 45px;
+    padding: 7px;
+}
+
+
+/*--------------- MEDIA QUERY ---------------*/
+/*-- 1173 --*/
+@media screen and (max-width:1173px){
+    /*-DRIVERS-*/
+    .driver-section .top-3, div{
+        display: inline-table;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    .driver-section .top-3 div img{
+        width: 300px;
+        height: 350px;
+    }
+    
+    .driver-section div div img{
+        width: 200px;
+        height: 250px;
+    }
+}
+
+/*-- 980PX --*/
+@media screen and (max-width:980px){
+    /*-DRIVERS-*/
+    .driver-section .top-3, div{
+        display: inline-table;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    .driver-section .top-3 div img{
+        width: 250px;
+        height: 300px;
+    }
+    
+    .driver-section div div img{
+        width: 150px;
+        height: 200px;
+    }
+}
+
+/*-- 954PX --*/
+@media screen and (max-width:954px){
+    /*-INDEX-*/
+    main section .grid-noticia h3{
+        font-size: 16px;
+    }
+
+    main section .grid-noticia h2{
+        font-size: 25px;
+    }
+
+    main section .grid-noticia{
+        padding-left: 50px;
+        padding-right: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    main section div .grid-noticia-central{
+        grid-column: span 2;
+        grid-row: span 2;
+        border-top: solid red 10px;
+        border-right: solid red 10px;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    /*-- GRID IMAGENES --*/
+    main section div .grid-noticia-central img{
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+    }
+    
+    main section div .grid-noticia-item img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*-- 895PX --*/
+@media screen and (max-width:895px){
+    /*-INDEX-*/
+    main section .grid-noticia{
+        padding-left: 20%;
+        padding-right: 20%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    main section div .grid-noticia-central{
+        grid-column: 1;
+        grid-row: span 2;
+        border-top: solid red 10px;
+        border-right: solid red 10px;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    /*-- GRID IMAGENES --*/
+    main section div .grid-noticia-central img{
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    main section div .grid-noticia-item img{
+        width: 90%;
+        height: 90%;
+        padding-left: 25px;
+    }
+}
+
+/*-- 830PX --*/
+@media screen and (max-width:830px){
+    /*-DRIVERS-*/
+    .driver-section .top-3, div{
+        display: inline-table;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    .driver-section .top-3 div img{
+        width: 180px;
+        height: 220px;
+    }
+}
+
+/*-- 800PX --*/
+@media screen and (max-width:800px){
+    /*-INDEX-*/
+    main section .grid-noticia{
+        padding-left: 20%;
+        padding-right: 20%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px;
+        gap: 15px;
+        padding-bottom: 5px;
+    }
+
+    main section div .grid-noticia-central{
+        grid-column: 1;
+        grid-row: span 2;
+        border-top: solid red 10px;
+        border-right: solid red 10px;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    /*-- GRID IMAGENES --*/
+    main section div .grid-noticia-central img{
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    main section div .grid-noticia-item img{
+        width: 90%;
+        height: 90%;
+        padding-left: 25px;
+    }
+}
+
+/*-- 696PX --*/
+@media screen and (max-width:696px){
+    /*-DRIVERS-*/
+    .driver-section .top-3, div{
+        display: inline-table;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    .driver-section div div img{
+        width: 120px;
+        height: 180px;
+    }
+}
