@@ -563,8 +563,8 @@ footer ul li a img:hover{
 @media screen and (max-width:895px){
     /*-INDEX-*/
     main section .grid-noticia{
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 150px;
@@ -614,8 +614,8 @@ footer ul li a img:hover{
 @media screen and (max-width:800px){
     /*-INDEX-*/
     main section .grid-noticia{
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 50px;
