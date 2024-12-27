@@ -208,10 +208,11 @@ main .nota-section p{
 
 .hero-cronograma h1{
     color: white;
-    font-size: 38px;
+    font-size: 23px;
     text-align:center;
     justify-content: center;
     font-family: "Orbitron", serif;
+    padding-bottom: 20px;
 }
 
 .hero-cronograma p{
@@ -223,6 +224,10 @@ main .nota-section p{
 }
 
 /* -- NOTICIA-CRONOGRAMA -- */
+.noticia-cronograma{
+    padding-left: 10px;
+}
+
 .noticia-cronograma p{
     padding: 5px 0px 0px 8px;
 }
@@ -238,6 +243,10 @@ main .nota-section p{
 }
 
 /* -- TABLA CRONOGRAMA -- */
+main .cronograma{
+    justify-content: center;
+}
+
 .cronograma{
     padding: 0px 0px 10px 30px;
 }
@@ -249,13 +258,12 @@ main .nota-section p{
 }
 
 .cronograma table{
-    width: 50%;
+    width: 60%;
     border-style: solid;
     border-color: black;
     border-radius: 10px;
     text-align: left;
-    align-content: center;
-    align-items: center;
+    justify-content: center;
 }
 
 .cronograma table tbody{
@@ -268,10 +276,6 @@ main .nota-section p{
 }
 .cronograma table tbody tr:nth-child(odd){
     background-color: rgb(224, 224, 224);
-}
-
-.noticia-cronograma{
-    padding-left: 10px;
 }
 
 /*--------------- DRIVERS ---------------*/
@@ -337,8 +341,8 @@ main .nota-section p{
 
 /* -- TABLA EQUIPOS -- */
 .equipo-section div div img{
-    width: 560px;
-    height: 330px;
+    width: 600px;
+    height: 350px;
     display:inline-table;
     justify-content:space-around;
 }
@@ -476,8 +480,8 @@ footer ul li a img:hover{
 
 
 /*--------------- MEDIA QUERY ---------------*/
-/*-- 1173 --*/
-@media screen and (max-width:1173px){
+/*-- 1236 --*/
+@media screen and (max-width:1236px){
     /*-DRIVERS-*/
     .driver-section .top-3, div{
         display: inline-table;
@@ -487,12 +491,20 @@ footer ul li a img:hover{
 
     .driver-section .top-3 div img{
         width: 300px;
-        height: 350px;
+        height: 340px;
     }
     
     .driver-section div div img{
         width: 200px;
-        height: 250px;
+        height: 240px;
+    }
+
+    /* -- TABLA EQUIPOS -- */
+    .equipo-section div div img{
+    width: 840px;
+    height: 480px;
+    display:inline-table;
+    justify-content:space-around;
     }
 }
 
@@ -506,13 +518,26 @@ footer ul li a img:hover{
     }
 
     .driver-section .top-3 div img{
-        width: 250px;
+        width: 260px;
         height: 300px;
     }
     
     .driver-section div div img{
-        width: 150px;
-        height: 200px;
+        width: 180px;
+        height: 220px;
+    }
+
+    /*-CRONOGRAMA-*/
+    .cronograma table{
+        width: 75%;
+    }
+
+    /* -- TABLA EQUIPOS -- */
+    .equipo-section div div img{
+    width: 750px;
+    height: 450px;
+    display:inline-table;
+    justify-content:space-around;
     }
 }
 
@@ -557,6 +582,11 @@ footer ul li a img:hover{
         width: 100%;
         height: 100%;
     }
+
+    /*-CRONOGRAMA-*/
+    .cronograma table{
+        width: 80%;
+    }
 }
 
 /*-- 895PX --*/
@@ -593,10 +623,26 @@ footer ul li a img:hover{
         height: 90%;
         padding-left: 25px;
     }
+
+    /*-CRONOGRAMA-*/
+    .cronograma table{
+        width: 88%;
+    }
+
+    /*-DRIVERS-*/
+    .driver-section .top-3 div img{
+        width: 220px;
+        height: 240px;
+    }
 }
 
 /*-- 830PX --*/
 @media screen and (max-width:830px){
+    /*-CRONOGRAMA-*/
+    .cronograma table{
+        width: 90%;
+    }
+
     /*-DRIVERS-*/
     .driver-section .top-3, div{
         display: inline-table;
@@ -604,9 +650,17 @@ footer ul li a img:hover{
         padding: 8px;
     }
 
-    .driver-section .top-3 div img{
-        width: 180px;
-        height: 220px;
+    .driver-section div div img{
+        width: 170px;
+        height: 200px;
+    }
+
+    /* -- TABLA EQUIPOS -- */
+    .equipo-section div div img{
+    width: 650px;
+    height: 350px;
+    display:inline-table;
+    justify-content:space-around;
     }
 }
 
@@ -653,6 +707,48 @@ footer ul li a img:hover{
     background-position: top;
     background-attachment: fixed;
     }
+
+    /*-DRIVERS-*/
+    .driver-section .top-3 div img{
+        width: 200px;
+        height: 240px;
+    }
+
+    .driver-section div div img{
+        width: 140px;
+        height: 180px;
+    }
+}
+
+/*-- 720PX --*/
+@media screen and (max-width:720px){
+    /*-CRONOGRAMA-*/
+    .hero-cronograma{
+        width: 100%;
+        height: 400px;
+        background-image: url("../img/cronograma-section-720px.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+
+    .hero-cronograma h1{
+        color: white;
+        font-size: 20px;
+        text-align:center;
+        justify-content: center;
+        font-family: "Orbitron", serif;
+        padding-bottom: 20px;
+    }
+
+    /* -- TABLA EQUIPOS -- */
+    .equipo-section div div img{
+    width: 530px;
+    height: 260px;
+    display:inline-table;
+    justify-content:space-around;
+    }
 }
 
 /*-- 696PX --*/
@@ -664,8 +760,13 @@ footer ul li a img:hover{
         padding: 8px;
     }
 
+    .driver-section .top-3 div img{
+        width: 380px;
+        height: 400px;
+    }
+
     .driver-section div div img{
-        width: 120px;
-        height: 180px;
+        width: 240px;
+        height: 280px;
     }
 }
