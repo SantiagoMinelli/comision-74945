@@ -650,7 +650,7 @@ footer ul li a img:hover{
     background-image: url("../img/colapinto-2025-696px.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: top;
     background-attachment: fixed;
     }
 }
