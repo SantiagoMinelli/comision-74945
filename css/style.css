@@ -659,4 +659,12 @@ footer ul li a img:hover{
         width: 120px;
         height: 180px;
     }
+
+    .nota-section{
+    background-image: url("../img/colapinto-2025-696px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    }
 }
