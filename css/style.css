@@ -480,33 +480,12 @@ footer ul li a img:hover{
 
 
 /*--------------- MEDIA QUERY ---------------*/
-/*-- 1236 --*/
-@media screen and (max-width:1236px){
-    /*-DRIVERS-*/
-    .driver-section .top-3, div{
-        display: inline-table;
-        justify-content: space-around;
-        padding: 8px;
-    }
-
-    .driver-section .top-3 div img{
-        width: 300px;
-        height: 340px;
-    }
-    
-    .driver-section div div img{
-        width: 200px;
-        height: 240px;
-    }
-
-    /* -- TABLA EQUIPOS -- */
-    .equipo-section div div img{
-    width: 840px;
-    height: 480px;
-    display:inline-table;
-    justify-content:space-around;
-    }
-}
+/* 
+320px–480px: Dispositivos móviles
+481px–768px: iPads y tablets
+769px–1024px: Pantallas pequeñas y portátiles
+1025px–1200px: Computadoras de escritorio y pantallas grandes
+*/
 
 /*-- 980PX --*/
 @media screen and (max-width:980px){
@@ -769,4 +748,39 @@ footer ul li a img:hover{
         width: 240px;
         height: 280px;
     }
+
+    /* -- TABLA EQUIPOS -- */
+    .equipo-section div div img{
+    width: 480px;
+    height: 280px;
+    display:inline-table;
+    justify-content:space-around;
+    }
+}
+
+/*-- 620PX --*/
+@media screen and (max-width:620px){
+    /*-DRIVERS-*/
+    .driver-section{
+        display: inline-table;
+        justify-content: space-around;
+    }
+
+    .driver-section .top-3 div img{
+        width: 320px;
+        height: 340px;
+    }
+
+    .driver-section div div img{
+        width: 320px;
+        height: 340px;
+    }
+
+    /* -- TABLA EQUIPOS -- */
+    .equipo-section div div img{
+        width: 450px;
+        height: 200px;
+        display:inline-table;
+        justify-content:space-around;
+        }
 }
