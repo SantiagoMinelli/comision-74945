@@ -1,0 +1,39 @@
+header{
+    font-family: "Orbitron", serif;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #ff0600;
+}
+
+.navbar-collapse{
+    padding: 10px;
+}
+
+.navbar-nav{
+    width: 45%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.nav-link{
+    color: white;
+    &:hover{
+        color: white;
+        background-color: black;
+        border-radius: 8px;
+    }
+}
+
+.logo-index{
+    width: 120px;
+    height: 40px;
+    &:hover{
+        border-color: white;
+        border-bottom: solid 1px black;
+    }
+}
+
+.navbar-toggler{
+    color: white;
+    border: solid white 2px;
+}
