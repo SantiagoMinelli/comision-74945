@@ -32,6 +32,8 @@ header {
   font-size: 15px;
   font-weight: bolder;
   background-color: #ff0600;
+  position: sticky;
+  z-index: 1;
 }
 
 .navbar-collapse {
@@ -46,6 +48,7 @@ header {
 
 .nav-link {
   color: white;
+  transition: 1.2s;
 }
 .nav-link:hover {
   color: white;
@@ -56,6 +59,7 @@ header {
 .logo-index {
   width: 120px;
   height: 40px;
+  transition: 1.2s;
 }
 .logo-index:hover {
   border-color: white;
@@ -109,13 +113,14 @@ main .noticias .grid-noticia .grid-noticia-central {
   border-radius: 15px;
   position: sticky;
   top: 0;
+  transition: 1s;
 }
 main .noticias .grid-noticia .grid-noticia-central img {
   width: 100%;
   padding-top: 10px;
 }
 main .noticias .grid-noticia .grid-noticia-central:hover {
-  padding: 15px;
+  padding: 5px;
   background-color: black;
   color: white;
   cursor: pointer;
@@ -123,6 +128,7 @@ main .noticias .grid-noticia .grid-noticia-central:hover {
 main .noticias .grid-noticia .grid-noticia-item {
   align-items: center;
   justify-content: center;
+  transition: 1s;
 }
 main .noticias .grid-noticia .grid-noticia-item:not(img, p) {
   border-bottom: solid red 1px;
@@ -130,7 +136,7 @@ main .noticias .grid-noticia .grid-noticia-item:not(img, p) {
   border-radius: 0 0 10px 0;
 }
 main .noticias .grid-noticia .grid-noticia-item:hover {
-  padding: 15px;
+  padding: 5px;
   background-color: black;
   color: white;
   cursor: pointer;
@@ -156,21 +162,25 @@ main .noticias .grid-noticia h3 {
 }
 main .nota-section {
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-image: url("../img/colapinto-2025.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
   color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: justify;
 }
 main .nota-section h2 {
-  font-size: 40px;
-  padding-top: 15px;
+  font-size: 45px;
+  padding-top: 40%;
+  padding-left: 50px;
 }
 main .nota-section p {
-  font-size: 15px;
+  font-size: 20px;
+  padding-left: 50px;
 }
 main .hero-cronograma {
   width: 100%;
@@ -251,8 +261,8 @@ main .driver-section .top-3 {
   padding: 8px;
 }
 main .driver-section .top-3 div img {
-  width: 330px;
-  height: 350px;
+  width: 300px;
+  height: 310px;
 }
 main .driver-section div {
   display: inline-table;
@@ -260,8 +270,8 @@ main .driver-section div {
   padding: 8px;
 }
 main .driver-section div div img {
-  width: 285px;
-  height: 300px;
+  width: 260px;
+  height: 270px;
 }
 main .equipo-section {
   text-align: center;
@@ -418,47 +428,53 @@ footer ul li a img:hover {
 */
 /*-- 980PX --*/
 @media screen and (max-width: 980px) {
-  /*-DRIVERS-*/
-  .driver-section .top-3 {
+  main {
+    /*-DRIVERS-*/
+    /*-CRONOGRAMA-*/
+    /* -- TABLA EQUIPOS -- */
+  }
+  main .driver-section .top-3 {
     display: inline-table;
     justify-content: space-around;
     padding: 8px;
   }
-  .driver-section div {
+  main .driver-section div {
     display: inline-table;
     justify-content: space-around;
     padding: 8px;
   }
-  .driver-section .top-3 div img {
+  main .driver-section .top-3 div img {
     width: 260px;
-    height: 300px;
+    height: 280px;
   }
-  .driver-section div div img {
+  main .driver-section div div img {
     width: 180px;
     height: 220px;
   }
-  /*-CRONOGRAMA-*/
-  .cronograma table {
+  main .cronograma table {
     width: 75%;
   }
-  /* -- TABLA EQUIPOS -- */
-  .equipo-section div div img {
-    width: 750px;
-    height: 450px;
+  main .equipo-section div div img {
+    width: 700px;
+    height: 390px;
     display: inline-table;
     justify-content: space-around;
   }
 }
 /*-- 954PX --*/
 @media screen and (max-width: 954px) {
-  /*-INDEX-*/
-  .noticias .grid-noticia h3 {
+  main {
+    /*-INDEX-*/
+    /*-- GRID IMAGENES --*/
+    /*-CRONOGRAMA-*/
+  }
+  main .noticias .grid-noticia h3 {
     font-size: 16px;
   }
-  .noticias .grid-noticia .grid-noticia-central h2 {
+  main .noticias .grid-noticia .grid-noticia-central h2 {
     font-size: 25px;
   }
-  .noticias .grid-noticia {
+  main .noticias .grid-noticia {
     padding-left: 50px;
     padding-right: 50px;
     display: grid;
@@ -467,7 +483,7 @@ footer ul li a img:hover {
     gap: 15px;
     padding-bottom: 15px;
   }
-  .noticias .grid-noticia .grid-noticia-central {
+  main .noticias .grid-noticia .grid-noticia-central {
     grid-column: span 2;
     grid-row: span 2;
     border-top: solid red 10px;
@@ -475,23 +491,26 @@ footer ul li a img:hover {
     border-radius: 15px;
     position: relative;
   }
-  /*-- GRID IMAGENES --*/
-  .noticias .grid-noticia .grid-noticia-central img {
+  main .noticias .grid-noticia .grid-noticia-central img {
     width: 100%;
     padding-top: 10px;
   }
-  .noticias .grid-noticia .grid-noticia-item img {
+  main .noticias .grid-noticia .grid-noticia-item img {
     width: 100%;
   }
-  /*-CRONOGRAMA-*/
-  .cronograma table {
+  main .cronograma table {
     width: 80%;
   }
 }
 /*-- 895PX --*/
 @media screen and (max-width: 895px) {
-  /*-INDEX-*/
-  .noticias .grid-noticia {
+  main {
+    /*-INDEX-*/
+    /*-- GRID IMAGENES --*/
+    /*-CRONOGRAMA-*/
+    /*-DRIVERS-*/
+  }
+  main .noticias .grid-noticia {
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
@@ -500,7 +519,7 @@ footer ul li a img:hover {
     gap: 15px;
     padding-bottom: 15px;
   }
-  .noticias .grid-noticia .grid-noticia-central {
+  main .noticias .grid-noticia .grid-noticia-central {
     grid-column: 1;
     grid-row: span 2;
     border-top: solid red 10px;
@@ -508,48 +527,47 @@ footer ul li a img:hover {
     border-radius: 15px;
     position: relative;
   }
-  /*-- GRID IMAGENES --*/
-  .noticias .grid-noticia .grid-noticia-central img {
+  main .noticias .grid-noticia .grid-noticia-central img {
     width: 100%;
     padding-top: 10px;
   }
-  .noticias .grid-noticia .grid-noticia-item img {
+  main .noticias .grid-noticia .grid-noticia-item img {
     width: 90%;
     padding-left: 25px;
   }
-  /*-CRONOGRAMA-*/
-  .cronograma table {
+  main .cronograma table {
     width: 88%;
   }
-  /*-DRIVERS-*/
-  .driver-section .top-3 div img {
+  main .driver-section .top-3 div img {
     width: 220px;
     height: 240px;
   }
 }
 /*-- 830PX --*/
 @media screen and (max-width: 830px) {
-  /*-CRONOGRAMA-*/
-  .cronograma table {
+  main {
+    /*-CRONOGRAMA-*/
+    /*-DRIVERS-*/
+    /* -- TABLA EQUIPOS -- */
+  }
+  main .cronograma table {
     width: 90%;
   }
-  /*-DRIVERS-*/
-  .driver-section .top-3 {
+  main .driver-section .top-3 {
     display: inline-table;
     justify-content: space-around;
     padding: 8px;
   }
-  .driver-section div {
+  main .driver-section div {
     display: inline-table;
     justify-content: space-around;
     padding: 8px;
   }
-  .driver-section div div img {
+  main .driver-section div div img {
     width: 170px;
     height: 200px;
   }
-  /* -- TABLA EQUIPOS -- */
-  .equipo-section div div img {
+  main .equipo-section div div img {
     width: 650px;
     height: 350px;
     display: inline-table;
@@ -558,8 +576,14 @@ footer ul li a img:hover {
 }
 /*-- 800PX --*/
 @media screen and (max-width: 800px) {
-  /*-INDEX-*/
-  .noticias .grid-noticia {
+  main {
+    /*-INDEX-*/
+    /*-- GRID IMAGENES --*/
+    /*-- NOTA SECTION --*/
+    /*-DRIVERS-*/
+    /*-EQUIPOS-*/
+  }
+  main .noticias .grid-noticia {
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
@@ -568,7 +592,7 @@ footer ul li a img:hover {
     gap: 15px;
     padding-bottom: 5px;
   }
-  .noticias .grid-noticia .grid-noticia-central {
+  main .noticias .grid-noticia .grid-noticia-central {
     grid-column: 1;
     grid-row: span 2;
     border-top: solid red 10px;
@@ -576,138 +600,190 @@ footer ul li a img:hover {
     border-radius: 15px;
     position: relative;
   }
-  /*-- GRID IMAGENES --*/
-  .noticias .grid-noticia .grid-noticia-central img {
+  main .noticias .grid-noticia .grid-noticia-central img {
     width: 100%;
     padding-top: 10px;
   }
-  .noticias .grid-noticia .grid-noticia-item img {
+  main .noticias .grid-noticia .grid-noticia-item img {
     width: 90%;
     padding-left: 25px;
   }
-  /*-- NOTA SECTION --*/
-  .nota-section {
+  main .nota-section {
     background-image: url("../img/colapinto-2025-696px.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-  /*-DRIVERS-*/
-  .driver-section .top-3 div img {
-    width: 200px;
-    height: 240px;
+  main .driver-section .top-3 div img {
+    width: 210px;
+    height: 230px;
   }
-  .driver-section div div img {
-    width: 140px;
+  main .driver-section div div img {
+    width: 150px;
     height: 180px;
+  }
+  main .equipo-section h1 {
+    font-size: 20px;
   }
 }
 /*-- 720PX --*/
 @media screen and (max-width: 720px) {
   /*-CRONOGRAMA-*/
-  .hero-cronograma {
+  main {
+    /*-DRIVERS-*/
+    /* -- TABLA EQUIPOS -- */
+  }
+  main .hero-cronograma {
     width: 100%;
     height: 100px;
     background-color: black;
     background-image: none;
   }
-  .hero-cronograma h1 {
+  main .hero-cronograma h1 {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     justify-content: center;
     font-family: "Orbitron", serif;
     padding-bottom: 20px;
   }
-  /* -- TABLA EQUIPOS -- */
-  .equipo-section div div img {
-    width: 530px;
-    height: 260px;
+  main .driver-section .top-3 div img {
+    width: 200px;
+    height: 220px;
+  }
+  main .driver-section div div img {
+    width: 140px;
+    height: 160px;
+  }
+  main .equipo-section div div img {
+    width: 540px;
+    height: 300px;
     display: inline-table;
     justify-content: space-around;
   }
 }
 /*-- 696PX --*/
 @media screen and (max-width: 696px) {
-  /*-DRIVERS-*/
-  .driver-section .top-3 {
+  main {
+    /*-DRIVERS-*/
+    /* -- TABLA EQUIPOS -- */
+  }
+  main .driver-section .top-3 {
     display: inline-table;
     justify-content: space-around;
     padding: 8px;
   }
-  .driver-section div {
+  main .driver-section div {
     display: inline-table;
     justify-content: space-around;
     padding: 8px;
   }
-  .driver-section .top-3 div img {
+  main .driver-section .top-3 div img {
     width: 380px;
     height: 400px;
   }
-  .driver-section div div img {
+  main .driver-section div div img {
     width: 240px;
     height: 280px;
   }
-  /* -- TABLA EQUIPOS -- */
-  .equipo-section div div img {
-    width: 480px;
-    height: 280px;
+  main .equipo-section div div img {
+    width: 500px;
+    height: 290px;
     display: inline-table;
     justify-content: space-around;
   }
 }
 /*-- 620PX --*/
 @media screen and (max-width: 620px) {
-  /*-INDEX-*/
-  .hero-section h1 {
+  main {
+    /*-INDEX-*/
+    /*-DRIVERS-*/
+    /* -- TABLA EQUIPOS -- */
+    /* -- CAMPEONATOS -- */
+  }
+  main .hero-section h1 {
+    font-size: 32px;
+    align-items: center;
+    align-content: flex-end;
+    padding-top: 50%;
+  }
+  main .hero-section p {
+    font-size: 18px;
+    align-items: center;
+    align-content: flex-end;
+  }
+  main .hero-cronograma h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Orbitron", serif;
+  }
+  main .driver-section h1 {
     font-size: 20px;
   }
-  .hero-section p {
+  main .driver-section p {
     font-size: 12px;
   }
-  /*-DRIVERS-*/
-  .driver-section h1 {
-    font-size: 20px;
-  }
-  .driver-section p {
-    font-size: 12px;
-  }
-  .driver-section .top-3 div img {
-    width: 320px;
+  main .driver-section .top-3 div img {
+    width: 330px;
     height: 340px;
   }
-  .driver-section div div img {
-    width: 320px;
+  main .driver-section div div img {
+    width: 330px;
     height: 340px;
   }
-  /* -- TABLA EQUIPOS -- */
-  .equipo-section div div img {
-    width: 350px;
-    height: 180px;
+  main .equipo-section div div img {
+    width: 435px;
+    height: 225px;
     display: inline-table;
     justify-content: space-around;
   }
-  .equipo-section h1 {
+  main .equipo-section h1 {
     font-size: 20px;
   }
-  .equipo-section p {
+  main .equipo-section p {
     font-size: 12px;
   }
-  /* -- CAMPEONATOS -- */
-  .campeonato-constructores h2 {
-    font-size: 20px;
-    padding: 10px;
-  }
-  .campeonato-drivers h2 {
+  main .campeonato-constructores h2 {
     font-size: 20px;
     padding: 10px;
   }
-  .campeonato-constructores div table {
+  main .campeonato-drivers h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  main .campeonato-constructores div table {
     font-size: 12px;
   }
-  .campeonato-drivers div table {
+  main .campeonato-drivers div table {
     font-size: 12px;
+  }
+}
+/*-- 460PX --*/
+@media screen and (max-width: 460px) {
+  main {
+    /*-DRIVERS-*/
+    /* -- TABLA EQUIPOS -- */
+  }
+  main .driver-section .top-3 div img {
+    width: 300px;
+    height: 320px;
+  }
+  main .driver-section div div img {
+    width: 300px;
+    height: 320px;
+  }
+  main .equipo-section div div img {
+    width: 350px;
+    height: 200px;
+    display: inline-table;
+    justify-content: space-around;
   }
 }
 

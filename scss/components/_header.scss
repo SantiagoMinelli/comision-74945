@@ -3,6 +3,8 @@ header{
     font-size: 15px;
     font-weight: bolder;
     background-color: #ff0600;
+    position: sticky;
+    z-index: 1;
 }
 
 .navbar-collapse{
@@ -17,6 +19,7 @@ header{
 
 .nav-link{
     color: white;
+    transition: 1.2s;
     &:hover{
         color: white;
         background-color: black;
@@ -27,6 +30,7 @@ header{
 .logo-index{
     width: 120px;
     height: 40px;
+    transition: 1.2s;
     &:hover{
         border-color: white;
         border-bottom: solid 1px black;

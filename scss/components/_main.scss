@@ -40,12 +40,13 @@ main {
                 border-radius: 15px;
                 position: sticky;
                 top: 0;
+                transition: 1s;
                 img{
                     width: 100%;
                     padding-top: 10px;
                 }
                 &:hover{
-                    padding: 15px;
+                    padding: 5px;
                     background-color: black;
                     color: white;
                     cursor: pointer;
@@ -54,13 +55,14 @@ main {
             .grid-noticia-item {
                 align-items: center;
                 justify-content: center;
+                transition: 1s;
                 &:not(img,p){
                     border-bottom: solid red 1px;
                     border-right: solid red 1px;
                     border-radius: 0 0 10px 0;
                 }
                 &:hover{
-                    padding: 15px;
+                    padding: 5px;
                     background-color: black;
                     color: white;
                     cursor: pointer;
@@ -89,20 +91,24 @@ main {
     }
     .nota-section{
         width: 100%;
-        height: 400px;
+        height: 500px;
         background-image: url("../img/colapinto-2025.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top;
+        background-position: center;
         background-attachment: fixed;
         color: white;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        text-align: justify;
         h2{
-            font-size: 40px;
-            padding-top: 15px;
+            font-size: 45px;
+            padding-top: 40%;
+            padding-left: 50px;
         }
         p{
-            font-size: 15px;
+            font-size: 20px;
+            padding-left: 50px;
         }
     }
     //* CRONOGRMA *//
@@ -189,8 +195,8 @@ main {
             padding: 8px;
             div{
                 img{
-                    width: 330px;
-                    height: 350px;
+                    width: 300px;
+                    height: 310px;
                 }
             }
         }
@@ -200,8 +206,8 @@ main {
             padding: 8px;
             div{
                 img{
-                    width: 285px;
-                    height: 300px;
+                    width: 260px;
+                    height: 270px;
                 }
             }
         }
