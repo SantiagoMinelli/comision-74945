@@ -4,19 +4,16 @@ main {
         width: 100%;
         height: 550px;
         background-image: url("../img/verstappen-campeon.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        @extend %bg-imagen;
         h1{
-            color: white;
+            color:nth($colores, 2);
             font-size: 50px;
             font-weight: 1000;
             text-align: center;
             padding-top: 25%;
         }
         p{
-            color: white;
+            color: nth($colores, 2);
             font-size: 20px;
             font-weight: bolder;
             text-align: center;
@@ -26,20 +23,13 @@ main {
         padding: 10px;
         .grid-noticia{
             width: 100%;
-            padding-left: 50px;
-            padding-right: 50px;
-            display: grid;
+            @extend %grilla;
             grid-template-columns: 1.8fr 1fr 1fr;
             grid-template-rows: 360px 360px 360px;
-            gap: 15px;
-            padding-bottom: 15px;
             .grid-noticia-central{
                 grid-row: span 3;
-                border-top: solid red 10px;
-                border-right: solid red 10px;
-                border-radius: 15px;
+                @include borde (solid nth($colores, 1) 10px, solid nth($colores, 1) 10px, 15px);
                 position: sticky;
-                top: 0;
                 transition: 1s;
                 img{
                     width: 100%;
@@ -47,8 +37,8 @@ main {
                 }
                 &:hover{
                     padding: 5px;
-                    background-color: black;
-                    color: white;
+                    background-color: nth($colores, 3);
+                    color: nth($colores, 2);
                     cursor: pointer;
                 }
             }
@@ -57,14 +47,14 @@ main {
                 justify-content: center;
                 transition: 1s;
                 &:not(img,p){
-                    border-bottom: solid red 1px;
-                    border-right: solid red 1px;
+                    border-bottom: solid nth($colores, 1) 1px;
+                    border-right: solid nth($colores, 1) 1px;
                     border-radius: 0 0 10px 0;
                 }
                 &:hover{
                     padding: 5px;
-                    background-color: black;
-                    color: white;
+                    background-color: nth($colores, 3);
+                    color: nth($colores, 2);
                     cursor: pointer;
                 }
                 img{
@@ -74,7 +64,7 @@ main {
                 }
             }
             p{
-                color: #ff0600;
+                color: nth($colores, 1);
                 font-size: 12px;
                 font-weight: bolder;
                 padding-top: 5px;
@@ -93,11 +83,8 @@ main {
         width: 100%;
         height: 500px;
         background-image: url("../img/colapinto-2025.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        color: white;
+        @extend %bg-imagen;
+        color: nth($colores, 2);
         display: flex;
         align-items: center;
         text-align: justify;
@@ -116,12 +103,9 @@ main {
         width: 100%;
         height: 400px;
         background-image: url("../img/cronograma-section.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        @extend %bg-imagen;
         h1{
-            color: white;
+            color: nth($colores, 2);
             font-size: 30px;
             text-align:center;
             justify-content: center;
@@ -144,13 +128,13 @@ main {
         table{
             width: 60%;
             border-style: solid;
-            border-color: black;
+            border-color: nth($colores, 3);
             border-radius: 10px;
             text-align: left;
             justify-content: center;
             thead{
-                color: white;
-                background-color: black;
+                color: nth($colores, 2);
+                background-color: nth($colores, 3);
                 font-family: "Orbitron", serif;
                 tr{
                     th{
@@ -159,11 +143,11 @@ main {
                 }
             }
             tbody{
-                color: gray;
+                color: nth($colores, 4);
                 font-family: "Blinker", sans-serif;
                 tr{
                     &:nth-child(odd){
-                        background-color: rgb(224, 224, 224);
+                        background-color: nth($colores, 5);
                     }
                     td{
                         padding: 8px;
@@ -180,13 +164,11 @@ main {
             font-size: 50px;
             text-align: left;
             padding: 20px;
-            border-right: solid black;
-            border-top: solid black;
-            border-radius: 10px;
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 15px;
-            background-color: rgb(232, 232, 232);
+            background-color: nth($colores, 5);
             border-radius: 10px;
         }
         .top-3{
@@ -220,13 +202,11 @@ main {
             font-size: 50px;
             text-align: left;
             padding: 20px;
-            border-right: solid black;
-            border-top: solid black;
-            border-radius: 10px;
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 15px;
-            background-color: rgb(232, 232, 232);
+            background-color: nth($colores, 5);
             border-radius: 10px;
         }
         div{
@@ -250,13 +230,11 @@ main {
             font-size: 40px;
             text-align: left;
             padding: 20px;
-            border-right: solid black;
-            border-top: solid black;
-            border-radius: 10px;
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 5px;
-            background-color: rgb(232, 232, 232);
+            background-color: nth($colores, 5);
             border-radius: 10px;
         }
         div{
@@ -267,13 +245,13 @@ main {
             table{
                 width: 50%;
                 border-style: solid;
-                border-color: black;
+                border-color: nth($colores, 3);
                 border-radius: 10px;
                 text-align: left;
                 margin: auto;
                 thead{
-                    color: white;
-                    background-color: black;
+                    color: nth($colores, 2);
+                    background-color: nth($colores, 3);
                     font-family: "Orbitron", serif;
                     padding: 8px;
                     td{
@@ -282,11 +260,11 @@ main {
                 }
                 tbody{
                     tr{
-                        color: gray;
+                        color: nth($colores, 4);
                         font-family: "Blinker", sans-serif;
                         padding: 8px;
                         &:nth-child(odd){
-                            background-color: rgb(224, 224, 224);
+                            background-color: nth($colores, 5);
                         }
                         td{
                             padding: 8px;
@@ -303,13 +281,11 @@ main {
             font-size: 40px;
             text-align: left;
             padding: 20px;
-            border-right: solid black;
-            border-top: solid black;
-            border-radius: 10px;
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 5px;
-            background-color: rgb(232, 232, 232);
+            background-color: nth($colores, 5);
             border-radius: 10px;
         }
         div{
@@ -320,13 +296,13 @@ main {
             table{
                 width: 50%;
                 border-style: solid;
-                border-color: black;
+                border-color: nth($colores, 3);
                 border-radius: 10px;
                 text-align: left;
                 margin: auto;
                 thead{
-                    color: white;
-                    background-color: black;
+                    color: nth($colores, 2);
+                    background-color: nth($colores, 3);
                     font-family: "Orbitron", serif;
                     padding: 8px;
                     td{
@@ -335,11 +311,11 @@ main {
                 }
                 tbody{
                     tr{
-                        color: gray;
+                        color: nth($colores, 4);
                         font-family: "Blinker", sans-serif;
                         padding: 8px;
                         &:nth-child(odd){
-                            background-color: rgb(224, 224, 224);
+                            background-color: nth($colores, 5);
                         }
                         td{
                             padding: 8px;

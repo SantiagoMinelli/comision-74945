@@ -1,0 +1,32 @@
+//* LISTA COLORES
+$colores: #ff0600, white, black, gray, rgb(224, 224, 224), linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(255,255,255,1) 50%, rgba(50,50,50,1) 100%);
+
+// #ff0600 nth($colores, 1);
+// white nth($colores, 2);
+// black nth($colores, 3);
+// gray nth($colores, 4);
+// rgb(224, 224, 224) nth($colores, 5);
+// gradiente nth($colores, 6);
+
+//* EXTENDS
+%bg-imagen{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+%grilla{
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+//* MIXIN
+@mixin borde ($superior, $derecho, $radio){
+    border-top: $superior;
+    border-right: $derecho;
+    border-radius: $radio;
+}

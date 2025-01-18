@@ -1,7 +1,22 @@
 @charset "UTF-8";
-/*--------------- RESET CSS ---------------*/
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap");
+main .hero-cronograma, main .nota-section, main .hero-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main .noticias .grid-noticia {
+  display: grid;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+/*--------------- RESET CSS ---------------*/
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +48,8 @@ header {
   font-weight: bolder;
   background-color: #ff0600;
   position: sticky;
+  top: 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -41,6 +58,7 @@ header {
 }
 
 .navbar-nav {
+  padding-left: 20px;
   width: 45%;
   align-items: center;
   justify-content: space-between;
@@ -48,9 +66,10 @@ header {
 
 .nav-link {
   color: white;
-  transition: 1.2s;
+  transition: 1.5s;
 }
 .nav-link:hover {
+  transform: scale(1.1);
   color: white;
   background-color: black;
   border-radius: 8px;
@@ -59,9 +78,10 @@ header {
 .logo-index {
   width: 120px;
   height: 40px;
-  transition: 1.2s;
+  transition: 1.5s;
 }
 .logo-index:hover {
+  transform: scale(1.1);
   border-color: white;
   border-bottom: solid 1px black;
 }
@@ -75,10 +95,6 @@ main .hero-section {
   width: 100%;
   height: 550px;
   background-image: url("../img/verstappen-campeon.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 main .hero-section h1 {
   color: white;
@@ -98,21 +114,15 @@ main .noticias {
 }
 main .noticias .grid-noticia {
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-  display: grid;
   grid-template-columns: 1.8fr 1fr 1fr;
   grid-template-rows: 360px 360px 360px;
-  gap: 15px;
-  padding-bottom: 15px;
 }
 main .noticias .grid-noticia .grid-noticia-central {
   grid-row: span 3;
-  border-top: solid red 10px;
-  border-right: solid red 10px;
+  border-top: solid #ff0600 10px;
+  border-right: solid #ff0600 10px;
   border-radius: 15px;
   position: sticky;
-  top: 0;
   transition: 1s;
 }
 main .noticias .grid-noticia .grid-noticia-central img {
@@ -131,8 +141,8 @@ main .noticias .grid-noticia .grid-noticia-item {
   transition: 1s;
 }
 main .noticias .grid-noticia .grid-noticia-item:not(img, p) {
-  border-bottom: solid red 1px;
-  border-right: solid red 1px;
+  border-bottom: solid #ff0600 1px;
+  border-right: solid #ff0600 1px;
   border-radius: 0 0 10px 0;
 }
 main .noticias .grid-noticia .grid-noticia-item:hover {
@@ -164,10 +174,6 @@ main .nota-section {
   width: 100%;
   height: 500px;
   background-image: url("../img/colapinto-2025.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   color: white;
   display: flex;
   align-items: center;
@@ -186,10 +192,6 @@ main .hero-cronograma {
   width: 100%;
   height: 400px;
   background-image: url("../img/cronograma-section.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 main .hero-cronograma h1 {
   color: white;
@@ -246,13 +248,13 @@ main .driver-section h1 {
   font-size: 50px;
   text-align: left;
   padding: 20px;
-  border-right: solid black;
   border-top: solid black;
+  border-right: solid black;
   border-radius: 10px;
 }
 main .driver-section p {
   padding: 15px;
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(224, 224, 224);
   border-radius: 10px;
 }
 main .driver-section .top-3 {
@@ -281,13 +283,13 @@ main .equipo-section h1 {
   font-size: 50px;
   text-align: left;
   padding: 20px;
-  border-right: solid black;
   border-top: solid black;
+  border-right: solid black;
   border-radius: 10px;
 }
 main .equipo-section p {
   padding: 15px;
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(224, 224, 224);
   border-radius: 10px;
 }
 main .equipo-section div {
@@ -308,13 +310,13 @@ main .campeonato-constructores h2 {
   font-size: 40px;
   text-align: left;
   padding: 20px;
-  border-right: solid black;
   border-top: solid black;
+  border-right: solid black;
   border-radius: 10px;
 }
 main .campeonato-constructores p {
   padding: 5px;
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(224, 224, 224);
   border-radius: 10px;
 }
 main .campeonato-constructores div img {
@@ -357,13 +359,13 @@ main .campeonato-drivers h2 {
   font-size: 40px;
   text-align: left;
   padding: 20px;
-  border-right: solid black;
   border-top: solid black;
+  border-right: solid black;
   border-radius: 10px;
 }
 main .campeonato-drivers p {
   padding: 5px;
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(224, 224, 224);
   border-radius: 10px;
 }
 main .campeonato-drivers div img {
@@ -401,7 +403,6 @@ main .campeonato-drivers div table tbody tr td {
 
 /*--------------- FOOTER ---------------*/
 footer {
-  background: rgb(50, 50, 50);
   background: linear-gradient(90deg, rgb(50, 50, 50) 0%, rgb(255, 255, 255) 50%, rgb(50, 50, 50) 100%);
   list-style: none;
 }
@@ -413,10 +414,10 @@ footer ul {
 footer ul li a img {
   width: 45px;
   padding: 5px;
+  transition: 1s;
 }
 footer ul li a img:hover {
-  width: 45px;
-  padding: 7px;
+  transform: scale(1.1);
 }
 
 /*--------------- MEDIA QUERY ---------------*/
@@ -475,19 +476,14 @@ footer ul li a img:hover {
     font-size: 25px;
   }
   main .noticias .grid-noticia {
-    padding-left: 50px;
-    padding-right: 50px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 300px;
-    gap: 15px;
-    padding-bottom: 15px;
   }
   main .noticias .grid-noticia .grid-noticia-central {
     grid-column: span 2;
     grid-row: span 2;
-    border-top: solid red 10px;
-    border-right: solid red 10px;
+    border-top: solid #ff0600 10px;
+    border-right: solid #ff0600 10px;
     border-radius: 15px;
     position: relative;
   }
@@ -522,8 +518,8 @@ footer ul li a img:hover {
   main .noticias .grid-noticia .grid-noticia-central {
     grid-column: 1;
     grid-row: span 2;
-    border-top: solid red 10px;
-    border-right: solid red 10px;
+    border-top: solid #ff0600 10px;
+    border-right: solid #ff0600 10px;
     border-radius: 15px;
     position: relative;
   }
@@ -595,8 +591,8 @@ footer ul li a img:hover {
   main .noticias .grid-noticia .grid-noticia-central {
     grid-column: 1;
     grid-row: span 2;
-    border-top: solid red 10px;
-    border-right: solid red 10px;
+    border-top: solid #ff0600 10px;
+    border-right: solid #ff0600 10px;
     border-radius: 15px;
     position: relative;
   }
