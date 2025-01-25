@@ -207,8 +207,10 @@ main .noticia-cronograma p {
   padding: 5px 0px 0px 8px;
 }
 main .cronograma {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 0px 0px 10px 30px;
+  align-items: center;
 }
 main .cronograma h2 {
   font-family: "Orbitron", serif;
@@ -220,6 +222,7 @@ main .cronograma table {
   border-color: black;
   border-radius: 10px;
   text-align: left;
+  align-items: center;
   justify-content: center;
 }
 main .cronograma table thead {
@@ -246,10 +249,11 @@ main .driver-section {
 }
 main .driver-section h1 {
   font-size: 50px;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   border-top: solid black;
   border-right: solid black;
+  border-left: solid black;
   border-radius: 10px;
 }
 main .driver-section p {
@@ -281,10 +285,11 @@ main .equipo-section {
 }
 main .equipo-section h1 {
   font-size: 50px;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   border-top: solid black;
   border-right: solid black;
+  border-left: solid black;
   border-radius: 10px;
 }
 main .equipo-section p {
@@ -308,10 +313,11 @@ main .campeonato-constructores {
 }
 main .campeonato-constructores h2 {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   border-top: solid black;
   border-right: solid black;
+  border-left: solid black;
   border-radius: 10px;
 }
 main .campeonato-constructores p {
@@ -357,10 +363,11 @@ main .campeonato-drivers {
 }
 main .campeonato-drivers h2 {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   border-top: solid black;
   border-right: solid black;
+  border-left: solid black;
   border-radius: 10px;
 }
 main .campeonato-drivers p {

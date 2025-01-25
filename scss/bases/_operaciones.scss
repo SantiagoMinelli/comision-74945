@@ -25,8 +25,15 @@ $colores: #ff0600, white, black, gray, rgb(224, 224, 224), linear-gradient(90deg
 }
 
 //* MIXIN
-@mixin borde ($superior, $derecho, $radio){
+@mixin borde-noticia ($superior, $derecho, $radio){
     border-top: $superior;
     border-right: $derecho;
+    border-radius: $radio;
+}
+
+@mixin borde ($superior, $derecho, $izquierdo, $radio){
+    border-top: $superior;
+    border-right: $derecho;
+    border-left: $izquierdo;
     border-radius: $radio;
 }

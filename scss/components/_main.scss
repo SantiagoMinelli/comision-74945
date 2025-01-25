@@ -28,7 +28,7 @@ main {
             grid-template-rows: 360px 360px 360px;
             .grid-noticia-central{
                 grid-row: span 3;
-                @include borde (solid nth($colores, 1) 10px, solid nth($colores, 1) 10px, 15px);
+                @include borde-noticia (solid nth($colores, 1) 10px, solid nth($colores, 1) 10px,15px);
                 position: sticky;
                 transition: 1s;
                 img{
@@ -119,8 +119,10 @@ main {
         }
     }
     .cronograma{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        padding: 0px 0px 10px 30px;
+        align-items: center;
         h2{
             font-family: "Orbitron", serif;
             font-size: 28px;
@@ -131,6 +133,7 @@ main {
             border-color: nth($colores, 3);
             border-radius: 10px;
             text-align: left;
+            align-items: center;
             justify-content: center;
             thead{
                 color: nth($colores, 2);
@@ -162,9 +165,9 @@ main {
         padding: 10px;
         h1{
             font-size: 50px;
-            text-align: left;
+            text-align: center;
             padding: 20px;
-            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 15px;
@@ -200,9 +203,9 @@ main {
         padding: 10px;
         h1{
             font-size: 50px;
-            text-align: left;
+            text-align: center;
             padding: 20px;
-            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 15px;
@@ -228,9 +231,9 @@ main {
         padding: 10px;
         h2{
             font-size: 40px;
-            text-align: left;
+            text-align: center;
             padding: 20px;
-            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 5px;
@@ -279,9 +282,9 @@ main {
         padding: 10px;
         h2{
             font-size: 40px;
-            text-align: left;
+            text-align: center;
             padding: 20px;
-            @include borde(solid nth($colores, 3), solid nth($colores, 3), 10px);
+            @include borde(solid nth($colores, 3), solid nth($colores, 3), solid nth($colores, 3), 10px);
         }
         p{
             padding: 5px;
