@@ -27,6 +27,7 @@ main {
             grid-template-columns: 1.8fr 1fr 1fr;
             grid-template-rows: 360px 360px 360px;
             .grid-noticia-central{
+                padding: 10px;
                 grid-row: span 3;
                 @include borde-noticia (solid nth($colores, 1) 10px, solid nth($colores, 1) 10px,15px);
                 position: sticky;
@@ -43,6 +44,7 @@ main {
                 }
             }
             .grid-noticia-item {
+                padding: 10px;
                 align-items: center;
                 justify-content: center;
                 transition: 1s;

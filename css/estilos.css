@@ -118,6 +118,7 @@ main .noticias .grid-noticia {
   grid-template-rows: 360px 360px 360px;
 }
 main .noticias .grid-noticia .grid-noticia-central {
+  padding: 10px;
   grid-row: span 3;
   border-top: solid #ff0600 10px;
   border-right: solid #ff0600 10px;
@@ -136,6 +137,7 @@ main .noticias .grid-noticia .grid-noticia-central:hover {
   cursor: pointer;
 }
 main .noticias .grid-noticia .grid-noticia-item {
+  padding: 10px;
   align-items: center;
   justify-content: center;
   transition: 1s;
